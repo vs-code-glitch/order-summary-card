@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  width:100%;
+  min-height: 100vh;
+  background: url("./images/pattern-background-desktop.svg");
+  /* background-color: hsl(245, 75%, 52%); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:hsl(225, 100%, 94%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  width: 310px;
+  height:470px;
+  /* border:2px solid red; */
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  /* margin-bottom: auto; */
+}
+
+.container article{
+  border: 2px solid green;
+}
+/* .container img{
+  wi
+} */
+
+.container article:first-child{
+  background: url('./images/illustration-hero.svg') no-repeat center/COVER;
+ background-position: COVER;
+ border-radius: .7rem .7rem 0 0 ;
+ border:none;
+}
+
+.content{
+  padding:1.5rem;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  /* border:6px solid yellow; */
+  background-color: #fff;
+  border-radius: 0 0 0.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content h1{
+  font-size: 24px;
+  font-weight: 700;
+ 
+}
+
+.content p{
+  font-size: 12px;
+  color:hsl(224, 23%, 55%);
+}
+
+.price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height:50px;
+  background-color: hsl(231, 48%, 95%);
+  border:none;
+  border-radius: 0.2rem;
+  justify-content: flex-start;
+  padding:0.5rem;
+}
+.price img{
+  justify-self: flex-start;
+  height:100%;
+  border-radius: 50%;
+  margin-right:10px;
+  }
+.price ul{
+  list-style-type: none;
+  justify-self: first baseline;
+}
+
+.price ul li:first-child{
+  font-size:12px;
+  
+}
+.price ul li:nth-child(2){
+  font-size: 10px;
+  color:hsl(224, 23%, 55%);
+}
+.price a{
+  margin-left:auto;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size:10px;
+  font-weight: 600;
+  font-style: bold;
+  color:hsl(245, 88%, 35%);
+}
+.btn{
+  width:100%;
+  height:50px;
+  background-color: hsl(245, 75%, 52%);
+  color:#fff;
+  font-family:'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  outline:none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.cancel{
+   color:hsl(224, 23%, 55%);
+   cursor: pointer;
+}
+
+.attribution {
+        margin-top:50px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
